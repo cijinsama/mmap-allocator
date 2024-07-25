@@ -1,5 +1,6 @@
 #include <mmap_allocator.h>
 namespace mm{
+void *default_allocator;
 void SetDefault(std::string filename) {
   default_allocator = static_cast<void *>(Allocator<char>::New(filename));
 }

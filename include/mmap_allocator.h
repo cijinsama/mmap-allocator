@@ -18,9 +18,7 @@ namespace mm {
 
 const int kPageSize = sysconf(_SC_PAGE_SIZE);
 
-namespace {
-void *default_allocator;
-};
+extern void *default_allocator;
 
 template <typename T> class Allocator {
 public:
